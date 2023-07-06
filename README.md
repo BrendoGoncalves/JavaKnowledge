@@ -2,6 +2,8 @@
 
 This project is a collection of packges that contain especif parts of the Java Programming.
 
+![java](/img/java.png)
+
 #### Principles
 
 1. Object Oriented Programming
@@ -14,3 +16,5 @@ This project is a collection of packges that contain especif parts of the Java P
 #### Techonologies
 
 * Java
+
+![duke](/img/duke.png)

@@ -2,7 +2,9 @@ package br.com.alura.knowledge07.module01;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class ListArray {
     public static void main(String[] args) {
@@ -37,17 +39,34 @@ public class ListArray {
             System.out.println(country);
         }
 
-        //countries.forEach(country -> System.out.println(country));
-        countries.forEach(new Consumer<String>(){
+        Collections.sort(countries);
+
+        /*countries.forEach(new Consumer<String>(){
             @Override
             public void accept(String s) {
                 System.out.println(s);
             }
         });
-
-
-        Collections.sort(countries);
+         */
         countries.forEach(country -> System.out.println(country));
+        //Consumer<String> consumer = s -> System.out.println(s);
+        //Consumer<String> consumer = System.out::println;
 
+        countries.sort(Comparator.comparing(s -> s.length()));
+        countries.sort(Comparator.comparing(String::length));
+
+        /*
+        Function<String, Integer> function = new Function<String, Integer>() {
+            @Override
+            public Integer apply(String s) {
+                return s.length();
+            }
+        };
+
+        Function<String, Integer> function = String::legth;
+
+        Comparator<String> comparator2 = Comparator.comparing(s -> s.length());
+        countries.sort(comparator2);
+         */
     }
 }

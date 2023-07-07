@@ -13,7 +13,7 @@ This project is a collection of packges that contain especif parts of the Java P
 5. Java IO
 6. Java Exception
 
-#### Techonologies
+#### Technologies
 
 * Java
 

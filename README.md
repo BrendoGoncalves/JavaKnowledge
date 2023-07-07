@@ -11,7 +11,7 @@ This project is a collection of packges that contain especif parts of the Java P
 3. Java Lang
 4. Java Util
 5. Java IO
-6. Java Exceptions
+6. Java Exception
 
 #### Techonologies
 
